@@ -6,6 +6,8 @@
 @import "contents.css";
 @import "popup.css";
 @import "contents_main.css";
+@import "profile.css";
+@import "comment.css";
 
 * {
     box-sizing: border-box;
