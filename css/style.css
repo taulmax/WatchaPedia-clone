@@ -5,6 +5,7 @@
 @import "footer.css";
 @import "contents.css";
 @import "popup.css";
+@import "contents_main.css";
 
 * {
     box-sizing: border-box;
