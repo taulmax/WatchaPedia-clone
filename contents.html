@@ -27,8 +27,40 @@
                     <input class="menu_search" type="text" placeholder="작품 제목,배우,감독을 검색해보세요.">
                 </div>
                 <span class="menu_login">로그인</span>
-                <span class="menu_sign-up">회원가입</span>
+                <span class="menu_sign-up" id="js-signUp">회원가입</span>
             </div>
+            <div class="pop_sign-up">
+                <img src="img/pop_logo.png" class="pop_logo">
+                <span class="pop_title">회원가입</span>
+                <form action="">
+                    <div class="pop_input-box">
+                        <input type="text" placeholder="이름">
+                    </div>
+                    <div class="pop_input-box">
+                        <input type="text" placeholder="이메일">
+                    </div>
+                    <div class="pop_input-box">
+                        <input type="text" placeholder="비밀번호">
+                    </div>
+                </form>
+                <button class="pop_btn">회원가입</button>
+                <div class="pop_already">
+                    <span>이미 가입하셨나요?&nbsp;</span>
+                    <a href="">
+                        <span>로그인</span>
+                    </a>
+                </div>
+                <span class="pop_or">OR</span>
+                <div class="pop_line-box">
+                    <div class="pop_line"></div>
+                    <div class="pop_line"></div>
+                </div>
+                <button class="pop_facebook">
+                    <i class="fab fa-facebook-square"></i>
+                    <span>Facebook 으로 로그인</span>
+                </button>
+            </div>
+            <div class="overlay"></div>
         </div>
     </header>
     <!-- 여기까지 메뉴 헤더 -->
@@ -91,22 +123,23 @@
                 <!-- 별점 평가하기 -->
                 <div class="content_info-right">
                     <span>평가하기</span>
-                    <span class="content_info_star">
-                        <span class="star star_left" id="star_left_1"></span>
-                        <span class="star star_right" id="star_right_1"></span>
-
-                        <span class="star star_left" id="star_left_2"></span>
-                        <span class="star star_right" id="star_right_2"></span>
-
-                        <span class="star star_left" id="star_left_3"></span>
-                        <span class="star star_right" id="star_right_3"></span>
-
-                        <span class="star star_left" id="star_left_4"></span>
-                        <span class="star star_right" id="star_right_4"></span>
-
-                        <span class="star star_left" id="star_left_5"></span>
-                        <span class="star star_right" id="star_right_5"></span>
-                    </span>
+                    <div class="content_info_star">
+                        <div class="star_box star1" value="0.5"></div>
+                        <i class="far fa-star real-star1 real-star"></i>
+                        <div class="star_box star2" value="1"></div>
+                        <div class="star_box star3" value="1.5"></div>
+                        <i class="far fa-star real-star2 real-star"></i>
+                        <div class="star_box star4" value="2"></div>
+                        <div class="star_box star5" value="2.5"></div>
+                        <i class="far fa-star real-star3 real-star"></i>
+                        <div class="star_box star6" value="3"></div>
+                        <div class="star_box star7" value="3.5"></div>
+                        <i class="far fa-star real-star4 real-star"></i>
+                        <div class="star_box star8" value="4"></div>
+                        <div class="star_box star9" value="4.5"></div>
+                        <i class="far fa-star real-star5 real-star"></i>
+                        <div class="star_box star10" value="5"></div>
+                    </div>
                 </div>
                 <!-- 별점 평가하기 끝 -->
 
@@ -117,6 +150,8 @@
         <!-- 여기까지 오른쪽 정보들 -->
     </div>
     <!-- 여기까지 영화 정보들 입니다 -->
+    <script src="js/index.js"></script>
+    <script src="js/star.js"></script>
 </body>
 
 </html>
