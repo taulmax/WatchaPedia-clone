@@ -124,6 +124,7 @@
     margin: 10px 0px;
 }
 
+/* 별 5개 한 묶음 박스 */
 .content_info_star {
     width: 250px;
     height: 40px;
@@ -131,11 +132,13 @@
     align-items: center;
 }
 
+/* 별 한개씩 개별 포장 박스 */
 .star_box {
     width: 10%;
     height: 100%;
 }
 
+/* 별 아이콘 */
 .content_info_star i {
     position: absolute;
     font-size: 40px;
@@ -143,22 +146,27 @@
     z-index: -1;
 }
 
+/* 마진을 조정하기 위한 첫번째 별 */
 .real-star1 {
     margin-left: 2.3px;
 }
 
+/* 마진을 조정하기 위한 두번째 별 */
 .real-star2 {
     margin-left: 52.8px;
 }
 
+/* 마진을 조정하기 위한 세번째 별 */
 .real-star3 {
     margin-left: 102.5px;
 }
 
+/* 마진을 조정하기 위한 네번째 별 */
 .real-star4 {
     margin-left: 153px;
 }
 
+/* 마진을 조정하기 위한 다섯번째 별 */
 .real-star5 {
     margin-left: 202.2px;
 }
