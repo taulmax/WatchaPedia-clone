@@ -1,9 +1,11 @@
+/* 메뉴바와 겹쳐있는 작품 썸네일 */
 .thumbnail {
     width: 100%;
     height: 400px;
     background-color: rgb(31, 31, 31);
 }
 
+/* 썸네일 밑에 겹쳐있는 콘텐츠 정보들 */
 .content_info-box {
     width: 100%;
     display: flex;
@@ -12,6 +14,7 @@
     margin-top: -25px;
 }
 
+/* 콘텐츠 정보들 중에 왼쪽 부분 */
 .content_info-box .left-column {
     display: flex;
     justify-content: center;
@@ -23,42 +26,50 @@
     border-radius: 3px;
 }
 
+/* 왼쪽 부분 안에 포스터 */
 .content_info-box .left-column img {
     width: 160px;
     height: 230px;
 }
 
+/* 콘텐츠 정보 중 오른쪽 부분 */
 .right-column {
     width: 750px;
     height: 230px;
     margin-left: 22px;
 }
 
+/* 오른쪽 부분 중 첫번째 줄 */
 .content_info:first-child {
     font-size: 13px;
     margin-bottom: 25px;
 }
 
+/* 첫번째 줄에 회색 글씨 */
 .content_info:first-child .gray {
     color: gray;
 }
 
+/* 첫번째 줄에 하얀 글씨 */
 .content_info:first-child .white {
     color: rgb(231, 231, 231);
 }
 
+/* 오른쪽 부분 중 두번째 줄 */
 .content_info:nth-child(2) {
     font-size: 33px;
     font-weight: 700;
     margin-bottom: 12px;
 }
 
+/* 오른쪽 부분 중 세번째 줄 */
 .content_info:nth-child(3) {
     font-size: 17px;
     color: rgb(173, 173, 173);
     margin-bottom: 20px;
 }
 
+/* 오른쪽 부분 중 네번째 줄 */
 .content_info:nth-child(4) {
     font-size: 17px;
     border-top: 1px solid rgb(224, 224, 224);
@@ -66,6 +77,7 @@
     padding: 10px 0px;
 }
 
+/* 오른쪽 부분 중 보고싶어요 버튼 */
 .content_want-see {
     display: flex;
     justify-content: center;
@@ -76,14 +88,64 @@
     width: 250px;
     height: 40px;
     border-radius: 5px;
+    margin-right: 33px;
+    margin-top: 33px;
 }
 
+/* 보고싶어요 버튼의 plus 아이콘 */
 .content_want-see i {
     margin-right: 10px;
     margin-left: -10px;
     transition: all 0.5s ease;
 }
 
+/* plus 아이콘 돌아가는 기능 */
 .content_want-see:hover > .plus-rotate {
     transform: rotate(90deg);
+}
+
+/* 오른쪽 부분 중 마지막 줄 */
+.content_info:last-child {
+    display: flex;
+}
+
+/* 마지막 줄에서 평가하기 쪽 박스 */
+.content_info-right {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 평가하기 글씨 */
+.content_info-right span:first-child {
+    font-size: 13px;
+    color: rgb(122, 122, 122);
+    margin-top: 10px;
+}
+
+.content_info_star {
+    margin-top: -10px;
+    margin-left: -5px;
+}
+
+.star{
+    display:inline-block;
+    width: 30px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.star_left{
+    background: url(http://gahyun.wooga.kr/main/img/testImg/star.png) no-repeat 0 0; 
+    background-size: 60px; 
+    margin-right: -3px;
+}
+
+.star_right{
+    background: url(http://gahyun.wooga.kr/main/img/testImg/star.png) no-repeat -30px 0; 
+    background-size: 60px; 
+    margin-left: -3px;
+}
+
+.star.on{
+    background-image: url(http://gahyun.wooga.kr/main/img/testImg/star_on.png);
 }
