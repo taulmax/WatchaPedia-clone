@@ -49,6 +49,7 @@
 
 .comment_comment {
     padding: 15px 0px;
+    height: 140px;
     border-bottom: 1px solid #dadada;
     line-height: 145%;
 }
