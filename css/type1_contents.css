@@ -26,10 +26,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .type1-content-box {
-    display: flex;
+    display: flex;  
     flex-direction: column;
 }
 
